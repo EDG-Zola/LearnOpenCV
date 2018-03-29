@@ -1,5 +1,5 @@
 /************************************************************************/
-/*                     使用感兴趣区域ROI实现图像叠加                    */
+/*                     使用感兴趣区域ROI实现图像叠加                      */
 /************************************************************************/
 #include <opencv2/opencv.hpp>
 #include <iostream>
@@ -10,10 +10,14 @@ bool ROI_AddImage(){
 	//1.读取图片
 	Mat srcImage = imread("dota_pa.jpg");
 	Mat logoImage = imread("dota_logo.jpg");
-	if (!srcImage.data)
+	if (!srcImage.data){
 		cerr << " 读取dota_pa.jpg失败！ " << endl;
-	if (!logoImage.data)
+		return false;
+	}
+	if (!logoImage.data){
 		cerr << " 读取dota_logo.jpg失败！ " << endl;
+		return false;
+	}
 	//2.定义一个Mat类型并截取一个矩形区域
 	//截取srcImage的区域，Rect的前两个参数为左上角坐标，后两个参数为矩形的长宽
 	Mat ROI_Image = srcImage(Rect(0, 0, logoImage.cols, logoImage.rows));

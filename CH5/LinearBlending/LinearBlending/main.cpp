@@ -10,10 +10,14 @@ bool ROI_AddImage(){
 	//1.∂¡»°Õº∆¨
 	Mat srcImage1 = imread("mogu.jpg");
 	Mat srcImage2 = imread("rain.jpg");
-	if (!srcImage1.data)
+	if (!srcImage1.data){
 		cerr << " ∂¡»°mogu.jpg ß∞‹£° " << endl;
-	if (!srcImage2.data)
+		return false;
+	}
+	if (!srcImage2.data){
 		cerr << " ∂¡»°rain.jpg ß∞‹£° " << endl;
+		return false;
+	}
 	Mat dstImage;
 	double alpha = 0.3;
 	double beta = 1 - alpha;
