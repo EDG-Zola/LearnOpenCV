@@ -74,7 +74,7 @@ static void on_BoxFilter(int, void*){
 /************************************************************************/
 static void on_MeanFilter(int, void*){
 	//均值滤波函数操作
-	boxFilter(g_srcImage, g_dsrImage2, -1, Size(g_nMeanFilterValue+1, g_nMeanFilterValue+1), Point(-1,-1), true, 4);
+	blur(g_srcImage, g_dsrImage2, Size(g_nMeanFilterValue+1, g_nMeanFilterValue+1), Point(-1,-1), 4);
 	//显示窗口
 	imshow("效果图：均值滤波", g_dsrImage2);
 }
@@ -84,7 +84,7 @@ static void on_MeanFilter(int, void*){
 /************************************************************************/
 static void on_GaussianFilter(int, void*){
 	//高斯滤波函数操作
-	boxFilter(g_srcImage, g_dsrImage3, -1, Size(g_nGaussianFilterValue+1, g_nGaussianFilterValue+1), Point(-1,-1), true, 4);
+	GaussianBlur(g_srcImage, g_dsrImage3, Size(g_nGaussianFilterValue*2+1, g_nGaussianFilterValue*2+1), 0, 0);
 	//显示窗口
 	imshow("效果图：高斯滤波", g_dsrImage3);
 }
