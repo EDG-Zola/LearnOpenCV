@@ -45,9 +45,12 @@ int main(){
 
 	//3.创建轨迹条,最大滑动值为40
 	createTrackbar("内核值", "效果图：方框滤波", &g_nBoxFilterValue, 40, on_BoxFilter);
+	on_BoxFilter(g_nBoxFilterValue, 0);
 	createTrackbar("内核值", "效果图：均值滤波", &g_nMeanFilterValue, 40, on_MeanFilter);
+	on_MeanFilter(g_nMeanFilterValue, 0);
 	createTrackbar("内核值", "效果图：高斯滤波", &g_nGaussianFilterValue, 40, on_GaussianFilter);
-	
+	on_GaussianFilter(g_nGaussianFilterValue, 0);
+
 	//4.打印操作说明信息
 	cout << "\t请滑动每个窗口的滑动条查看滤波效果" << endl;
 	cout << "\t退出程序，请按'q'键\n";
