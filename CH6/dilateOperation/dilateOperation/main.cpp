@@ -23,7 +23,7 @@ int main(){
 
 	//2.创建命名窗口及显示原图
 	namedWindow("原图");
-	namedWindow("腐蚀操作");
+	namedWindow("膨胀操作");
 	imshow("原图", srcImage);
 
 	//3.使用getStructuringElement创建一个内核矩阵
@@ -32,7 +32,7 @@ int main(){
 
 	//4.使用dilate函数显示效果
 	dilate(srcImage, dstImage, element);
-	imshow("腐蚀操作", dstImage);
+	imshow("膨胀操作", dstImage);
 
 	//5,存储效果图
 	imwrite("dilate.jpg", dstImage);
