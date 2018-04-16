@@ -18,7 +18,14 @@ Mat g_srcImage, g_dstImage, g_tempImage;
 /*						helpText()函数：说明操作                        */
 /************************************************************************/
 void helpText(){
-
+	system("color 5E");
+	cout << "\t欢迎来到图像金字塔和Resize演示程序\n";
+	cout << "\t按键说明：\n";
+	cout << "\t\t按下ESC或q键 -- 退出程序\n"
+		 << "\t\t按下1键 -- 基于【resize】函数进行图片放大\n"
+		 << "\t\t按下2键 -- 基于【resize】函数进行图片缩小\n"
+		 << "\t\t按下3键 -- 基于【pyrUp】函数进行图片放大\n"
+		 << "\t\t按下4键 -- 基于【pyrDown】函数进行图片缩小\n";
 }
 
 /************************************************************************/
@@ -53,25 +60,25 @@ int main(){
 			}
 			//按下1键，基于【resize】函数进行图片放大
 			case '1':{
-				resize(g_tempImage, g_dstImage, Size(g_dstImage.cols*2, g_dstImage.rows*2));
+				resize(g_tempImage, g_dstImage, Size(g_tempImage.cols*2, g_tempImage.rows*2));
 				cout << "按键【1】被按下，基于【resize】函数进行图片放大\n";
 				break;
 		    }
 			 //按下2键，基于【resize】函数进行图片缩小
 			case '2':{
-				resize(g_tempImage, g_dstImage, Size(g_dstImage.cols/2, g_dstImage.rows/2), 0.0, 0.0, INTER_CUBIC);
+				resize(g_tempImage, g_dstImage, Size(g_tempImage.cols/2, g_tempImage.rows/2), 0.0, 0.0, INTER_CUBIC);
 				cout << "按键【2】被按下，基于【resize】函数进行图片缩小\n";
 				break;
 			 }
 			 //按下3键，基于【pyrUp】函数进行图片放大
 			case '3':{
-				pyrUp(g_tempImage, g_dstImage, Size(g_srcImage.cols*2, g_dstImage.rows*2));
+				pyrUp(g_tempImage, g_dstImage, Size(g_tempImage.cols*2, g_tempImage.rows*2));
 				cout << "按键【3】被按下，基于【pyrUp】函数进行图片放大\n";
 				break;
 			 }
 			 //按下4键，基于【pyrDown】函数进行图片缩小
 			case '4':{
-				pyrDown(g_tempImage, g_dstImage, Size(g_srcImage.cols/2, g_dstImage.rows/2));
+				pyrDown(g_tempImage, g_dstImage, Size(g_tempImage.cols/2, g_tempImage.rows/2));
 				cout << "按键【4】被按下，基于【pyrDown】函数进行图片缩小\n";
 				break;
 			 }
