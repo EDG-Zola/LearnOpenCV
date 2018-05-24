@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainModelColor", "TrainModelColor\TrainModelColor.vcxproj", "{BD856C64-0F5F-4811-B063-1DE8EA5D1E12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD856C64-0F5F-4811-B063-1DE8EA5D1E12}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD856C64-0F5F-4811-B063-1DE8EA5D1E12}.Debug|Win32.Build.0 = Debug|Win32
+		{BD856C64-0F5F-4811-B063-1DE8EA5D1E12}.Release|Win32.ActiveCfg = Release|Win32
+		{BD856C64-0F5F-4811-B063-1DE8EA5D1E12}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
