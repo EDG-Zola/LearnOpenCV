@@ -1,0 +1,78 @@
+﻿生成启动时间为 2018\5\16 星期三 14:44:16。
+     1>项目“G:\TSR\1\generateTrainImages\generateTrainImages\generateTrainImages.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\generateTrainImages.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\VS2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D DLIB_JPEG_SUPPORT /D DLIB_PNG_SUPPORT /D DLIB_HAVE_AVX /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt color_cvt.cpp main.cpp pre_img.cpp
+         pre_img.cpp
+         main.cpp
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\main.cpp(74): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\main.cpp(83): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\main.cpp(110): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\main.cpp(33): warning C4101: “px”: 未引用的局部变量
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\main.cpp(33): warning C4101: “py”: 未引用的局部变量
+         color_cvt.cpp
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\color_cvt.cpp(8): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\color_cvt.cpp(10): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\color_cvt.cpp(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatetrainimages\generatetrainimages\color_cvt.cpp(41): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\generateTrainImages.exe.embed.manifest.res" Debug\generateTrainImages_manifest.rc 
+       Link:
+         D:\VS2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\TSR\1\generateTrainImages\Debug\generateTrainImages.exe" /INCREMENTAL /NOLOGO dlib_release_32bit_msvc1900.lib opencv_objdetect249.lib opencv_ts249.lib opencv_video249.lib opencv_nonfree249.lib opencv_ocl249.lib opencv_photo249.lib opencv_stitching249.lib opencv_superres249.lib opencv_videostab249.lib opencv_calib3d249.lib opencv_contrib249.lib opencv_core249.lib opencv_features2d249.lib opencv_flann249.lib opencv_gpu249.lib opencv_highgui249.lib opencv_imgproc249.lib opencv_legacy249.lib opencv_ml249.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\generateTrainImages.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\TSR\1\generateTrainImages\Debug\generateTrainImages.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\TSR\1\generateTrainImages\Debug\generateTrainImages.lib" /MACHINE:X86 Debug\generateTrainImages.exe.embed.manifest.res
+         Debug\color_cvt.obj
+         Debug\main.obj
+         Debug\pre_img.obj
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1900”不匹配值“1600”(color_cvt.obj 中)
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(color_cvt.obj 中)
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1900”不匹配值“1600”(color_cvt.obj 中)
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(color_cvt.obj 中)
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_1.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1900”不匹配值“1600”(color_cvt.obj 中)
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_1.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(color_cvt.obj 中)
+     1>MSVCRTD.lib(MSVCR100D.dll) : error LNK2005: "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ) 已经在 dlib_release_32bit_msvc1900.lib(save_jpeg.obj) 中定义
+     1>MSVCRTD.lib(MSVCR100D.dll) : error LNK2005: "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z) 已经在 dlib_release_32bit_msvc1900.lib(save_jpeg.obj) 中定义
+     1>MSVCRTD.lib(MSVCR100D.dll) : error LNK2005: _sprintf 已经在 dlib_release_32bit_msvc1900.lib(jerror.obj) 中定义
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2019: 无法解析的外部符号 "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)，该符号在函数 "public: virtual void * __thiscall std::basic_ostringstream<char,struct std::char_traits<char>,class std::allocator<char> >::`scalar deleting destructor'(unsigned int)" (??_G?$basic_ostringstream@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UAEPAXI@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2001: 无法解析的外部符号 "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_1.obj) : error LNK2001: 无法解析的外部符号 "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2019: 无法解析的外部符号 ___std_terminate，该符号在函数 __unwindfunclet$??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z$8 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2001: 无法解析的外部符号 ___std_terminate
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2019: 无法解析的外部符号 __imp__set_terminate，该符号在函数 "private: void __thiscall dlib::fatal_error::check_for_previous_fatal_errors(void)" (?check_for_previous_fatal_errors@fatal_error@dlib@@AAEXXZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2001: 无法解析的外部符号 __imp__set_terminate
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2019: 无法解析的外部符号 __imp____std_exception_copy，该符号在函数 "public: __thiscall dlib::error::error(class dlib::error const &)" (??0error@dlib@@QAE@ABV01@@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2001: 无法解析的外部符号 __imp____std_exception_copy
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2019: 无法解析的外部符号 __imp____std_exception_destroy，该符号在函数 "public: virtual __thiscall dlib::error::~error(void)" (??1error@dlib@@UAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2001: 无法解析的外部符号 __imp____std_exception_destroy
+     1>dlib_release_32bit_msvc1900.lib(save_jpeg.obj) : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl std::_Xbad_alloc(void)" (__imp_?_Xbad_alloc@std@@YAXXZ)，该符号在函数 "public: void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int,unsigned int)" (?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) void __cdecl std::_Xbad_alloc(void)" (__imp_?_Xbad_alloc@std@@YAXXZ)
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __Init_thread_header，该符号在函数 "class dlib::threads_kernel_shared::threader & __cdecl dlib::threads_kernel_shared::thread_pool(void)" (?thread_pool@threads_kernel_shared@dlib@@YAAAVthreader@12@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __Init_thread_abort，该符号在函数 __unwindfunclet$?thread_pool@threads_kernel_shared@dlib@@YAAAVthreader@12@XZ$0 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __Init_thread_footer，该符号在函数 "class dlib::threads_kernel_shared::threader & __cdecl dlib::threads_kernel_shared::thread_pool(void)" (?thread_pool@threads_kernel_shared@dlib@@YAAAVthreader@12@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Xtime_get_ticks，该符号在函数 "struct xtime __cdecl std::_To_xtime<__int64,struct std::ratio<1,10000000> >(class std::chrono::duration<__int64,struct std::ratio<1,10000000> > const &)" (??$_To_xtime@_JU?$ratio@$00$0JIJGIA@@std@@@std@@YA?AUxtime@@ABV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@0@@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Mtx_init_in_situ，该符号在函数 "public: __thiscall dlib::threads_kernel_shared::threader::threader(void)" (??0threader@threads_kernel_shared@dlib@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Mtx_destroy_in_situ，该符号在函数 "public: __thiscall dlib::mutex::~mutex(void)" (??1mutex@dlib@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Mtx_current_owns，该符号在函数 "void __cdecl dlib::threads_kernel_shared::thread_starter(void *)" (?thread_starter@threads_kernel_shared@dlib@@YAXPAX@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Mtx_lock，该符号在函数 "public: __thiscall dlib::threads_kernel_shared::threader::~threader(void)" (??1threader@threads_kernel_shared@dlib@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Mtx_unlock，该符号在函数 "public: __thiscall std::unique_lock<class std::mutex>::~unique_lock<class std::mutex>(void)" (??1?$unique_lock@Vmutex@std@@@std@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Cnd_init_in_situ，该符号在函数 "public: __thiscall dlib::threads_kernel_shared::threader::threader(void)" (??0threader@threads_kernel_shared@dlib@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Cnd_destroy_in_situ，该符号在函数 "public: __thiscall dlib::signaler::~signaler(void)" (??1signaler@dlib@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Cnd_wait，该符号在函数 "public: __thiscall dlib::threads_kernel_shared::threader::~threader(void)" (??1threader@threads_kernel_shared@dlib@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Cnd_timedwait，该符号在函数 "void __cdecl dlib::threads_kernel_shared::thread_starter(void *)" (?thread_starter@threads_kernel_shared@dlib@@YAXPAX@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Cnd_broadcast，该符号在函数 "public: __thiscall dlib::threads_kernel_shared::threader::~threader(void)" (??1threader@threads_kernel_shared@dlib@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __imp___Cnd_signal，该符号在函数 "public: bool __thiscall dlib::threads_kernel_shared::threader::create_new_thread(void (__cdecl*)(void *),void *)" (?create_new_thread@threader@threads_kernel_shared@dlib@@QAE_NP6AXPAX@Z0@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl std::_Throw_C_error(int)" (__imp_?_Throw_C_error@std@@YAXH@Z)，该符号在函数 "public: __thiscall std::unique_lock<class std::mutex>::~unique_lock<class std::mutex>(void)" (??1?$unique_lock@Vmutex@std@@@std@@QAE@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl std::_Throw_Cpp_error(int)" (__imp_?_Throw_Cpp_error@std@@YAXH@Z)，该符号在函数 "void __cdecl dlib::threads_kernel_shared::thread_starter(void *)" (?thread_starter@threads_kernel_shared@dlib@@YAXPAX@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(threads_kernel_shared.obj) : error LNK2019: 无法解析的外部符号 __Init_thread_epoch，该符号在函数 "class dlib::threads_kernel_shared::threader & __cdecl dlib::threads_kernel_shared::thread_pool(void)" (?thread_pool@threads_kernel_shared@dlib@@YAAAVthreader@12@XZ) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(jerror.obj) : error LNK2019: 无法解析的外部符号 __imp____acrt_iob_func，该符号在函数 "void __cdecl output_message(struct jpeg_common_struct *)" (?output_message@@YAXPAUjpeg_common_struct@@@Z) 中被引用
+     1>dlib_release_32bit_msvc1900.lib(jerror.obj) : error LNK2019: 无法解析的外部符号 __imp____stdio_common_vfprintf，该符号在函数 _fprintf 中被引用
+     1>dlib_release_32bit_msvc1900.lib(jerror.obj) : error LNK2019: 无法解析的外部符号 __imp____stdio_common_vsprintf，该符号在函数 _sprintf 中被引用
+     1>dlib_release_32bit_msvc1900.lib(jmemmgr.obj) : error LNK2019: 无法解析的外部符号 __imp____stdio_common_vsscanf，该符号在函数 _sscanf 中被引用
+     1>dlib_release_32bit_msvc1900.lib(jchuff.obj) : error LNK2019: 无法解析的外部符号 ___report_rangecheckfailure，该符号在函数 "void __cdecl jpeg_make_c_derived_tbl(struct jpeg_compress_struct *,int,int,struct c_derived_tbl * *)" (?jpeg_make_c_derived_tbl@@YAXPAUjpeg_compress_struct@@HHPAPAUc_derived_tbl@@@Z) 中被引用
+     1>G:\TSR\1\generateTrainImages\Debug\generateTrainImages.exe : fatal error LNK1120: 29 个无法解析的外部命令
+     1>已完成生成项目“G:\TSR\1\generateTrainImages\generateTrainImages\generateTrainImages.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.62
