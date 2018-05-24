@@ -1,0 +1,57 @@
+﻿生成启动时间为 2018\5\17 星期四 19:58:40。
+     1>项目“G:\TSR\1\generateColorTrainImages\generateColorTrainImages\generateColorTrainImages.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\generateColorTrainImages.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\VS2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D DLIB_JPEG_SUPPORT /D DLIB_PNG_SUPPORT /D DLIB_HAVE_AVX /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt color_cvt.cpp main.cpp pre_img.cpp
+         pre_img.cpp
+     1>d:\vs2010\vc\include\valarray(79): fatal error C1088: 无法刷新编译器中间文件:“C:\Users\ADMINI~1\AppData\Local\Temp\_CL_973c5d9dex”: No space left on device
+                 d:\vs2010\vc\include\valarray(75): 编译类 模板 成员函数“std::valarray<_Ty>::valarray(const std::valarray<_Ty> &)”时
+                 with
+                 [
+                     _Ty=size_t
+                 ]
+                 d:\vs2010\vc\include\valarray(1219): 参见对正在编译的类 模板 实例化“std::valarray<_Ty>”的引用
+                 with
+                 [
+                     _Ty=size_t
+                 ]
+         正在生成代码...
+         正在编译...
+         main.cpp
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\main.cpp(82): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\main.cpp(91): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\main.cpp(118): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\main.cpp(28): warning C4101: “px”: 未引用的局部变量
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\main.cpp(28): warning C4101: “py”: 未引用的局部变量
+     1>d:\vs2010\vc\include\vector(508): fatal error C1088: 无法刷新编译器中间文件:“C:\Users\ADMINI~1\AppData\Local\Temp\_CL_c4c979f5ex”: No space left on device
+                 d:\vs2010\vc\include\vector(505): 编译类 模板 成员函数“std::vector<_Ty>::vector(void)”时
+                 with
+                 [
+                     _Ty=float
+                 ]
+                 g:\opencv2.4.9\opencv\build\include\opencv2\objdetect\objdetect.hpp(483): 参见对正在编译的类 模板 实例化“std::vector<_Ty>”的引用
+                 with
+                 [
+                     _Ty=float
+                 ]
+         正在生成代码...
+         正在编译...
+         color_cvt.cpp
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\color_cvt.cpp(8): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\color_cvt.cpp(10): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\color_cvt.cpp(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\tsr\1\generatecolortrainimages\generatecolortrainimages\color_cvt.cpp(41): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\vs2010\vc\include\xstring(541): fatal error C1088: 无法刷新编译器中间文件:“C:\Users\ADMINI~1\AppData\Local\Temp\_CL_876ddb8cex”: No space left on device
+                 此诊断出现在编译器生成的函数“void *std::basic_ios<_Elem,_Traits>::__delDtor(unsigned int)”中
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+         正在生成代码...
+     1>已完成生成项目“G:\TSR\1\generateColorTrainImages\generateColorTrainImages\generateColorTrainImages.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.86
